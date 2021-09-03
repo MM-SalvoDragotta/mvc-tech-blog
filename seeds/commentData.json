@@ -1,16 +1,16 @@
 [
     {   
-        "comment": "Very good Post",
+        "comment_text": "Very good Post",
         "post_id": "2",
         "user_id": "1"
     },
     {
-        "comment": "I did not know that",
+        "comment_text": "I did not know that",
         "post_id": "1",
         "user_id": "2"
     },
     {   
-        "comment": "I agree",
+        "comment_text": "I agree",
         "post_id": "3",
         "user_id": "1"
     }    
