@@ -10,11 +10,11 @@ Comment.init({
         primaryKey: true,
         autoIncrement: true
     },
-    comment_text: {
+    comment: {
         type: DataTypes.STRING,
         allowNull: false,
         validate: {
-            len: [6]
+            len: [4]
         }
     },
     user_id: {
