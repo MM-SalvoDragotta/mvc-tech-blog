@@ -1,17 +1,17 @@
 [
     {   
-        "title": "Salvo First Post",
-        "content": "Salvo First Post content",
+        "title": "First Post",
+        "content": "First Post content",
         "user_id": "1"
     },
     {
-        "title": "Salvo Second Post",
-        "content": "Salvo Second Post content",
+        "title": "Second Post",
+        "content": "Second Post content",
         "user_id": "1"
     },
     {   
-        "title": "Luke First Post",
-        "content": "Luke First Post content",
+        "title": "Third Post",
+        "content": "Third post content",
         "user_id": "2"
     }    
 
