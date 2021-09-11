@@ -17,8 +17,12 @@ header, .project:not(:last-child) {
   text-decoration: underline;
 }
 
-.dollar-amount {
-  color: #056605;
-  font-weight: bold;
-  margin-left: -5px;
+.navigation{
+  color: black;
+  font-weight: bold !important; 
+  font-size: 1.1rem; 
+  margin-left:10px;
+  margin-right:10px;
+  padding-top: 5px ;
 }
+
