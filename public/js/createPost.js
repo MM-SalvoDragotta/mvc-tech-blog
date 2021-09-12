@@ -2,12 +2,12 @@ const createPostFormHandler = async (event) => {
   event.preventDefault();
 
   const title = document.querySelector('input[name="create-post-title"]').value;
-  const post_content = document.querySelector('input[name="create-post-content"]').value;
+  const content = document.querySelector('input[name="create-post-content"]').value;
 
-  if (title  && post_content) {
+  if (title  && content) {
     const response = await fetch('/api/posts', {
       method: 'POST',
-      body: JSON.stringify({ title , post_content }),
+      body: JSON.stringify({ title , content }),
       headers: { 'Content-Type': 'application/json' },
     });
 

@@ -1,16 +1,16 @@
 <div>
     <a href="/dashboard" class="is-pulled-right"> &larr; back to dashboard</a>
     <h2 class="title">Create Post</h2><hr>
-    <form class="create-post">
-        <div>
-            <label for="create-post-title">Title:</label>
-            <input class="input" type="text" id="create-post-title" name="create-post-title" placeholder="Blog title here"/>
+    <form>
+        <div class="form-group">
+            <label for="create-post-title"><strong>Title:</strong></label>
+            <input class="form-control" type="text" id="create-post-title" name="create-post-title" placeholder="Blog title here"/>
         </div>
-        <div>
-            <label for="create-post-content">Content:</label>
-            <input class="textarea is-large" id="create-post-content" name="create-post-content" placeholder="Blog content here"/>
+        <div class="form-group">
+            <label for="create-post-content"><strong>Content:</strong></label>
+            <textarea class="form-control" id="create-post-content" name="create-post-content" placeholder="Blog content here" rows="15"></textarea>
         </div>
-        <button type="submit" class="button is-primary is-pulled-right">Create Post</button>
+        <button type="submit" class="button btn-primary">Create Post</button>
     </form>
 </div>
 
