@@ -3,10 +3,7 @@ const createPostFormHandler = async (event) => {
 
   const title = document.querySelector('input[name="create-post-title"]').value;
   const content = document.querySelector('textarea[name="create-post-content"]').value;
-  // var content = text.split(/\s+/);
-
-
-
+  
   if (title  && content) {
     const response = await fetch('/api/posts/create', {
       method: 'POST',
@@ -15,7 +12,7 @@ const createPostFormHandler = async (event) => {
     });
 
     if (response.ok) {
-      // document.location.replace('/dashboard');
+      document.location.replace('/dashboard');
     } else {
       alert(response.statusText);
     }
