@@ -3,6 +3,8 @@ const createPostFormHandler = async (event) => {
 
   const title = document.querySelector('input[name="create-post-title"]').value;
   const content = document.querySelector('textarea[name="create-post-content"]').value;
+  // var content = text.split(/\s+/);
+
 
 
   if (title  && content) {
