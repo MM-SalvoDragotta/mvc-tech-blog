@@ -1,0 +1,32 @@
+<div class="mb-5 pt-3">
+    <a href="/dashboard/create/">
+        <button id="create-post" class="button is-primary is-pulled-right"> Create Post
+        </button>
+    </a>    
+    <h2 class="title pb-4">Your posts</h2><hr>
+</div>
+
+{{#if posts.length}}
+{{#each posts as |post|}}
+<div class="card mb-5">
+    <div class="card-header bg-secondary">
+        <h4 class="card-title"><a class="text-white" href="/post/{{post.id}}">{{post.title}}</a></h4>        
+    </div>
+    <div class="card-body">
+        <p class="card-text">{{post.content}}</p>
+    </div>
+    <div>
+        <b>Posted by {{user.name}}</b> 
+        on {{format_date created_at}} | <a href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a>
+    </div>   
+    <a href="/dashboard/edit/{{post.id}}">
+        <button class="button mb-5 ml-5 is-warning">Edit Post                
+        </button>
+    </a>
+</div>
+{{/each}}
+{{else}}
+<h6 class="pb-4 has-text-centered is-italic">You have no posts</h6>
+{{/if}}
+
+
