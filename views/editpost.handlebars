@@ -1,4 +1,7 @@
 <div>
+  {{#if session.user_name == post.user.name}}
+  <p>{{session.user_name}} </p>
+  <p>{{post.user.name}}</p>
   <a href="/dashboard"> &larr; Back to Dashboard</a>
   <h2 class="title mt-5">Edit Post</h2><hr>
   <form class="edit-post-form">
@@ -31,7 +34,7 @@
   </section>
   {{/each}}
 </div>
-
+{{/if}}
 <script src="/js/editpost.js"></script>
 <script src="/js/deletepost.js"></script>
 {{!-- <script src="/js/comment.js"></script> --}}
