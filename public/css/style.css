@@ -38,10 +38,7 @@ text-bold {
 .comment {
   padding: 1%;
   margin-bottom: 1%;
-}
-
-.comment:nth-child(odd) {
-  background-color: #debe9e;
+  background-color: #debe9e
 }
 
 .comment .meta {
