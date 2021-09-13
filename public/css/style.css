@@ -34,3 +34,18 @@ text-bold {
   margin : 7px !important;
   padding-top: 4px;
 }
+
+.comment {
+  padding: 1%;
+  margin-bottom: 1%;
+}
+
+.comment:nth-child(odd) {
+  background-color: #debe9e;
+}
+
+.comment .meta {
+  font-size: 90%;
+  margin-bottom: .5%;
+  opacity: .6;
+}

@@ -9,6 +9,11 @@ module.exports = {
       return `${word}s`;
     }
     return word;
+  },
+
+  compare_users : (session_user , post_user) => {
+    return session_user == post_user
+
   }
 
 };
