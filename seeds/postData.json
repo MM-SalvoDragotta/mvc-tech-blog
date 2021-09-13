@@ -1,18 +1,22 @@
 [
     {   
-        "title": "First Post",
-        "content": "First Post content",
+        "title": "What is GitHub Copilot",
+        "content": "GitHub Copilot is currently in beta, but it comes with the promise of creating complete blocks of code apart from comments in natural language, so just by writing in a comment “bring the last Facebook post from an account”, you would be suggesting a code block where you access through the official API in a fetch request together with the “account” parameter, and return the information that we request extracted in the same response block that you give us the request. Quite powerful, not free of errors, but with a complete structure of a function. We can now use our hands and make the arrangements that we consider necessary or search among the different suggestions that Copilot offers us to solve the problem.",
         "user_id": "1"
     },
     {
-        "title": "Second Post",
-        "content": "Second Post content",
-        "user_id": "1"
+        "title": "What is frontend web development",
+        "content": "This skillset involves the actual presentation of your website—how the information in your website is laid out in browsers and on mobile devices as well. A dedicated frontend developer will be very experienced working with HTML and CSS, as well as the scripting language JavaScript. With these languages, the developer can very efficiently manipulate the information on a website to make it appealing and effective.",
+        "user_id": "2"
     },
     {   
-        "title": "Third Post",
-        "content": "Third post content",
-        "user_id": "2"
-    }    
-
+        "title": "What is backend web development?",
+        "content": "Backend developer must be able to write code to receive the information input from the user and also save it somewhere–like in a database. There are two main types of databases: relational (like PostgreSQL and MySQL) and non-relational management systems (like Mongo). The language used for database management is SQL, which helps the developer interact with the database. You can get started with it in our SQL command cheat sheet.",
+        "user_id": "3"
+    },
+    {   
+        "title": "What is a full-stack web developer",
+        "content": "Full-stack developers are experts in both the frontend and backend; so, the full-stack of technology that makes up a website. They are proficient in both frontend and backend languages and frameworks, as well as in server, network and hosting environments.To get to this breadth and depth of knowledge, most full-stack developers will have spent many years working in a variety of different roles. They also tend to be well-versed in both business logic and user experience, meaning they are not only well-equipped to get hands on, but can also guide and consult on strategy too.",
+        "user_id": "4"
+    }
 ]

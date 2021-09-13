@@ -8,6 +8,17 @@
         "name": "Luke",
         "email": "luke@hotmail.com",
         "password": "password12345"
+    },
+    {
+        "name": "Erik",
+        "email": "erik@hotmail.com",
+        "password": "password12345"
+    },
+    {
+        "name": "Luna",
+        "email": "luna@hotmail.com",
+        "password": "password12345"
     }
+
 ]
     
