@@ -1,6 +1,4 @@
-# mvc-tech-blog
-
-# Object-Relational Mapping (ORM): E-Commerce Back End
+# Tech Blog
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ![Javascript](https://img.shields.io/badge/Javascript-yellow)
