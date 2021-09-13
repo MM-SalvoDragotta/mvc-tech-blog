@@ -79,7 +79,7 @@ router.get('/edit/:id', withAuth, async (req, res) => {
     const onePost = postData.map((post) => post.get({ plain: true }));
 
     // Pass serialized data and session flag into template
-    res.render('edit-post', { 
+    res.render('editpost', { 
     onePost, 
     logged_in: true
     });

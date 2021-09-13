@@ -82,7 +82,6 @@ router.put('/:id', withAuth, async (req, res) => {
         }
 });
 
-
 router.delete('/:id', withAuth, async (req, res) => {
     try {
         const getPost = await Post.destroy(
@@ -101,6 +100,39 @@ router.delete('/:id', withAuth, async (req, res) => {
             console.log(err.message);
             res.status(500).json(err);
         }
+});
+
+router.get('/', withAuth, async (req, res) => {
+  try {
+      const getPosts =  await Post.findAll({      
+          attributes: [
+            'id',
+            'title',
+            'created_at',
+            'content'
+          ],
+          order: [['created_at', 'DESC']],
+          include: [
+            // include the Comment model here:
+            {
+              model: User,
+              attributes: ['name']
+            },
+            {
+              model: Comment,
+              attributes: ['id', 'comment_text', 'post_id', 'user_id', 'created_at'],
+              include: {
+                model: User,
+                attributes: ['name']
+              }
+            }
+          ]
+          });   
+          res.status(200).json(getPosts);
+  } catch (err) {
+          console.log(err.message);
+          res.status(500).json(err);
+      }
 });
 
 

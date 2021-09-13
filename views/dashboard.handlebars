@@ -1,9 +1,8 @@
-<div class="mb-5 pt-3">
-    <a href="/dashboard/create/">
-        <button id="create-post" class="button is-primary is-pulled-right"> Create Post
-        </button>
-    </a>    
+<div class="mb-5 pt-3">        
     <h2 class="title pb-4">Your posts</h2><hr>
+    <a href="/dashboard/create/">
+        <button id="create-post" class="button btn-primary"> Create New Post </button>
+    </a>
 </div>
 
 {{#if posts.length}}
@@ -19,14 +18,15 @@
         <b>Posted by {{user.name}}</b> 
         on {{format_date created_at}} | <a href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a>
     </div>   
-    <a href="/dashboard/edit/{{post.id}}">
-        <button class="button mb-5 ml-5 is-warning">Edit Post                
-        </button>
+    <a class = "m-a" href="/post/{{post.id}}">
+        <button class="button btn-primary extra-margin">Edit Post </button>
     </a>
 </div>
 {{/each}}
 {{else}}
 <h6 class="pb-4 has-text-centered is-italic">You have no posts</h6>
 {{/if}}
+
+
 
 
