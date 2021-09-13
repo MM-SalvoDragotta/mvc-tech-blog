@@ -3,8 +3,6 @@ const withAuth = (req, res, next) => {
   if (!req.session.logged_in) {
     res.redirect('/login');
   } else {
-    // res.locals.user = req.user.toJSON() || null;
-    // console.log(res.locals.user)
     next();
   }
 };
